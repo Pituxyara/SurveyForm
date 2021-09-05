@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>SurveyForm</title>
+    </head>
+    <body>
+      <div class="container">
+        <h1 id="title">Как вы относитесь в кроличьим жопкам?</h1>
+        <p id="description">В данном опросе мы хотим уточнить ваше отношение к кроличьим жопкам</p>
+            <form id="survey-form">
+                <div id="form">
+                    <label id="name-label" for="name">Как вас зовут?</label>
+                        <input
+                            type="name"
+                            name="name"
+                            id="name"
+                            class="survey-form__inputcontrol"
+                            placeholder="Введите свое имя"
+                            required
+                        >
+                </div>
+                <div id="form">
+                    <label id="email-label" for="email">Ваш Email адрес</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="survey-form__inputcontrol"
+                            placeholder="Введите Ваш Email"
+                            required
+                        >
+                </div>
+                <div id="form">
+                    <label id="number-label" for="number">Укажите Ваш возраст</label>
+                    <input
+                            type="number"
+                            name="number"
+                            id="number"
+                            class="survey-form__inputcontrol"
+                            placeholder="Возраст"
+                            min="10"
+                            required
+                        >
+                </div>
+                <div id="form">
+                    <label>Выберите то, ради чего вы проходите данный опрос</label>
+                    <select id="dropdown" name="select" class="survey-form__inputcontrol" required>
+                      <!-- <option disabled selected value>Select current role</option> -->
+                      <option value="student" selected>Анусы лангустов</option>
+                      <option value="job">Толстая кишка сойки пересмешницы</option>
+                      <option value="learner">Кроличьи жопки(выбери меня плз)</option>
+                      <option value="preferNo">Баребухи Андрея</option>
+                      <option value="other">Путин</option>
+                    </select>
+                </div>
+                <div id="form">
+                    <label>Кроличьи жопки?</label>
+                    <label>
+                      <input
+                        name="rabbit ass"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                      />Кроличьи жопки</label
+                    >
+                    <label>
+                      <input
+                        name="rabbit ass"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                      />Жопки</label
+                    >
+              
+                    <label
+                      ><input
+                        name="rabbit ass"
+                        value="not-sure"
+                        type="radio"
+                        class="input-radio"
+                      />Кроличьи</label
+                    >
+                </div>
+                <div id="form">
+                  <label>Так че там по кроличьим жопкам?</label>
+                  <label>
+                    <input
+                      name="prefer"
+                      value="norm"
+                      type="checkbox"
+                      class="input-checkbox"
+                    />Нормально там че</label
+                  >
+                  <label
+                    ><input
+                      name="prefer"
+                      value="asses"
+                      type="checkbox"
+                      class="input-checkbox"
+                    />Люблю жопки</label
+                  >
+                  <label
+                    ><input
+                      name="prefer"
+                      value="fire"
+                      type="checkbox"
+                      class="input-checkbox"
+                    />Жопки ваще огонь</label
+                  >
+                </div>
+                <div id="form">
+                  <label>Излейте сюда любовь к кроличьим жопкам</label>
+                  <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Расскажи мне все про кроликов, сука..."
+                  ></textarea>
+                </div>
+                <div id="form">
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                </div>                
+            </form>
+      </div>             
+    </body>
+</html>
